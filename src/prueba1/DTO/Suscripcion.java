@@ -1,15 +1,14 @@
 
 package prueba1.DTO;
-import java.util.Date;
 public class Suscripcion {
-    private Date InicioSuscripcion;
+    private String InicioSuscripcion;
     private int ValorSuscripcion;
     private String Equipo;
     private int Abono;
     private String Usuario;
 
     public Suscripcion() {
-        this.InicioSuscripcion = new Date ();
+        this.InicioSuscripcion = "";
         this.ValorSuscripcion = 0;
         this.Equipo = "";
         this.Abono = 0;
@@ -18,11 +17,11 @@ public class Suscripcion {
         
     }
 
-    public Date getInicioSuscripcion() {
+    public String  getInicioSuscripcion() {
         return InicioSuscripcion;
     }
 
-    public void setInicioSuscripcion(Date InicioSuscripcion) {
+    public void setInicioSuscripcion(String InicioSuscripcion) {
         this.InicioSuscripcion = InicioSuscripcion;
     }
 
